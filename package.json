@@ -1,0 +1,14 @@
+{
+  "name": "kreebz",
+  "version": "1.0.0",
+  "description": "landing page for kreebz",
+  "main": "index.js",
+  "scripts": {
+      "compile:sass":"node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "alex",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

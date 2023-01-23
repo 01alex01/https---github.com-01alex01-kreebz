@@ -4,7 +4,7 @@
   "description": "landing page for kreebz",
   "main": "index.js",
   "scripts": {
-      "compile:sass":"node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "author": "alex",
   "license": "ISC",

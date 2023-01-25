@@ -117,18 +117,28 @@ html {
   right: 1rem; }
 
 .typography__box {
-  display: flex; }
+  display: flex;
+  height: 100%; }
+  @media only screen and (max-width: 56.25em) {
+    .typography__box {
+      display: block;
+      text-align: center; } }
 
 .typography__sect {
   background-color: #FBFCFF;
   top: 50%;
   left: 50%;
-  transform: translate(35%, -50%);
+  transform: translate(35%, -35%);
   text-align: center;
   padding: 30px 30px;
   margin-right: 15px;
   box-shadow: 1px 3px 5px #000;
-  border-radius: 6px; }
+  border-radius: 6px;
+  height: 100%; }
+  @media only screen and (max-width: 56.25em) {
+    .typography__sect {
+      width: 200px;
+      margin-bottom: 1rem; } }
   .typography__sect--a {
     background-color: #3772FF;
     padding: 10px 8px;

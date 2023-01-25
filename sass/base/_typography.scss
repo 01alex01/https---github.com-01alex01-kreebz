@@ -58,17 +58,32 @@
 }
 .typography__box{
     display: flex;
+    height: 100%;
+
+
+    @include respond(tab-port){
+        display: block;
+        text-align: center;
+      
+    }
 }
 .typography__sect{
     background-color: $color-tertiary-light;
     top: 50%;
     left: 50%;
-    transform: translate(35%,-50%);
+    transform: translate(35%,-35%);
     text-align: center;
     padding: 30px 30px;
     margin-right: 15px;
     box-shadow: 1px 3px 5px $color-black;
     border-radius: 6px;
+    height: 100%;
+
+    @include respond(tab-port){
+       width: 200px;
+       
+        margin-bottom: 1rem;
+    }
     
     &--a{
         background-color: $color-primary-light;

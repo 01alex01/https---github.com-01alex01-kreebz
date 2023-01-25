@@ -292,7 +292,9 @@ html {
   margin-bottom: 1rem; }
 
 .difference {
-  width: 100%; }
+  width: 100%;
+  background-position: center;
+  background-size: cover; }
   .difference__text {
     padding: 10px 30px; }
   .difference__h4 {

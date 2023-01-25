@@ -861,14 +861,24 @@ html {
   background-image: url(/images/Rectangle3.png);
   margin-bottom: 0rem;
   margin-top: 10rem;
-  display: flex; }
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover; }
   .last__section--text {
     position: absolute;
     margin-left: 19.5rem;
     margin-top: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .last__section--text {
+        margin-left: 1rem;
+        margin-top: 5rem; } }
     .last__section--text h1 {
       font-size: 6rem;
       color: #fff; }
+      @media only screen and (max-width: 56.25em) {
+        .last__section--text h1 {
+          font-size: 3rem; } }
     .last__section--text a {
       padding: 15px 40px;
       text-decoration: none;
@@ -877,11 +887,23 @@ html {
       font-weight: 400;
       text-transform: uppercase;
       border-radius: 50px; }
+      @media only screen and (max-width: 56.25em) {
+        .last__section--text a {
+          font-size: 1rem;
+          padding: 10px 30px; } }
   .last__section--2-icon {
     position: absolute;
     left: 75%;
     margin-top: 30rem;
     padding: 20px 20px; }
+    @media only screen and (max-width: 56.25em) {
+      .last__section--2-icon {
+        left: 70%; } }
+    @media only screen and (max-width: 37.5em) {
+      .last__section--2-icon {
+        padding: 10px 10px;
+        left: 10%;
+        margin-top: 30rem; } }
     .last__section--2-icon-a {
       position: relative;
       display: inline-block;
@@ -907,6 +929,14 @@ html {
     margin-top: 30rem;
     padding: 10px 30px;
     margin-left: 18rem; }
+    @media only screen and (max-width: 56.25em) {
+      .last__section--img1 {
+        margin-left: -2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .last__section--img1 {
+        padding: 5px 15px;
+        margin-left: -1rem;
+        margin-top: 20rem; } }
     .last__section--img1-a {
       display: inline;
       margin-right: 1rem; }
@@ -920,6 +950,9 @@ html {
   margin-left: 92rem;
   margin-top: -13rem;
   text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    .shape__out1 {
+      display: none; } }
   .shape__out1--2 {
     position: relative;
     height: 27rem;

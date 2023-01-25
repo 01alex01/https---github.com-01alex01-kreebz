@@ -1,20 +1,37 @@
-.last__section{
+.last__section {
     height: 75vh;
     background-image: url(/images/Rectangle3.png);
     margin-bottom: 0rem;
     margin-top: 10rem;
     display: flex;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
 
-    &--text{
+
+    &--text {
         position: absolute;
         margin-left: 19.5rem;
         margin-top: 2rem;
 
-        & h1{
+
+        @include respond(tab-port) {
+            margin-left: 1rem;
+            margin-top: 5rem;
+        }
+
+        & h1 {
             font-size: 6rem;
             color: $color-primary-text;
+
+            @include respond(tab-port) {
+                font-size: 3rem;
+
+
+            }
         }
-        & a{
+
+        & a {
             padding: 15px 40px;
             text-decoration: none;
             color: $color-black;
@@ -22,58 +39,89 @@
             font-weight: 400;
             text-transform: uppercase;
             border-radius: 50px;
+
+            @include respond(tab-port) {
+                font-size: 1rem;
+                padding: 10px 30px;
+
+
+            }
         }
     }
-    &--2-icon{
+
+    &--2-icon {
         position: absolute;
-         left:75%;
-         margin-top: 30rem;   
+        left: 75%;
+        margin-top: 30rem;
         padding: 20px 20px;
-     
-      
-       
 
-        &-a{
-            position: relative;
-            display: inline-block;
-            text-align: center;
-             border-radius: 50px;
-             border: 1px solid $color-primary-text;
-             padding: 1rem 1.5rem;
-             margin-bottom:4rem;
-             margin-left: .5rem;
-             cursor: pointer;
-             
-             
+        @include respond (tab-port) {
+            left: 70%;
+        }
+
+        @include respond(phone) {
+            padding: 10px 10px;
+            left: 10%;
+            margin-top: 30rem;
+
 
         }
 
-        &-b{
+
+
+        &-a {
             position: relative;
             display: inline-block;
             text-align: center;
-             border-radius: 50px;
+            border-radius: 50px;
             border: 1px solid $color-primary-text;
-             padding: 1rem 1rem;
-             margin-bottom:4rem;
-             margin-left: .5rem;
-             cursor: pointer;
+            padding: 1rem 1.5rem;
+            margin-bottom: 4rem;
+            margin-left: .5rem;
+            cursor: pointer;
+
+
+
+        }
+
+        &-b {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50px;
+            border: 1px solid $color-primary-text;
+            padding: 1rem 1rem;
+            margin-bottom: 4rem;
+            margin-left: .5rem;
+            cursor: pointer;
         }
     }
 
-   &--img1{
-    position: absolute;
-    margin-top: 30rem;
-    padding: 10px 30px;
-    margin-left: 18rem;
+    &--img1 {
+        position: absolute;
+        margin-top: 30rem;
+        padding: 10px 30px;
+        margin-left: 18rem;
 
-    &-a{
-        display: inline;
-        margin-right: 1rem;
+        @include respond(tab-port) {
+            margin-left: -2rem;
+
+        }
+
+        @include respond(phone) {
+            padding: 5px 15px;
+            margin-left: -1rem;
+            margin-top: 20rem;
+        }
+
+        &-a {
+            display: inline;
+            margin-right: 1rem;
+        }
     }
-   }
 }
-.shape__out1{
+
+.shape__out1 {
 
     height: 30rem;
     width: 30rem;
@@ -84,43 +132,48 @@
     margin-top: -13rem;
 
     text-align: center;
- 
-   
-  
 
-    &--2{
+
+    @include respond (tab-port) {
+        display: none;
+    }
+
+
+
+
+    &--2 {
         position: relative;
         height: 27rem;
         width: 27rem;
-         background-color: $color-grey-dark;
+        background-color: $color-grey-dark;
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
-       margin-top: 1.5rem;
-       margin-left: 1.3rem;
+        margin-top: 1.5rem;
+        margin-left: 1.3rem;
         position: relative;
-       justify-content: center;
+        justify-content: center;
         z-index: 10;
-        
-     
+
+
     }
 
-    &--3{
+    &--3 {
         position: relative;
         height: 23rem;
         width: 23rem;
-        background-color:transparent;
+        background-color: transparent;
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         position: relative;
         z-index: 10;
-        
-        & img{
+
+        & img {
             height: 100%;
         }
-      
+
     }
- 
+
 }

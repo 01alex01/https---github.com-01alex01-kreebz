@@ -594,29 +594,48 @@ html {
       border-radius: 6px; }
 
 .popular__cities {
-  height: 40vh;
+  height: 100%;
   text-align: center;
   position: relative;
-  margin-bottom: 20rem; }
+  margin-bottom: 20rem;
+  background-position: center;
+  background-size: cover; }
+  @media only screen and (max-width: 56.25em) {
+    .popular__cities {
+      margin-bottom: 5rem; } }
   .popular__cities--a {
     margin-bottom: 5rem;
     text-align: center; }
 
 .popular__cities2 {
-  flex-basis: 32%;
   border-radius: 10px;
-  margin-bottom: 30px;
+  padding: 10px 30px;
   position: relative;
   display: flex;
-  overflow: hidden; }
+  text-align: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100%; }
+  @media only screen and (max-width: 56.25em) {
+    .popular__cities2 {
+      display: block;
+      text-align: center; } }
   .popular__cities2--b {
-    margin-left: 20px;
-    text-align: center; }
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    padding: 1rem 3rem; }
+    @media only screen and (max-width: 56.25em) {
+      .popular__cities2--b {
+        padding: 1rem 10rem;
+        text-align: center; } }
     .popular__cities2--b--img {
-      width: 100%;
       height: 45vh;
       display: flex;
       z-index: 0; }
+      @media only screen and (max-width: 56.25em) {
+        .popular__cities2--b--img {
+          height: 50vh;
+          height: 50vh; } }
 
 .row {
   max-width: 114rem;

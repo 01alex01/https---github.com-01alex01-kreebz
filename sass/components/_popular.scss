@@ -1,32 +1,63 @@
 .popular__cities {
-    height: 40vh;
+    height: 100%;
     text-align: center;
     position: relative;
     margin-bottom: 20rem;
+    background-position: center;
+    background-size: cover;
+    
 
+
+    @include respond (tab-port){
+        margin-bottom: 5rem;
+    }
     &--a {
         margin-bottom: 5rem;
         text-align: center;
     }
 }
 .popular__cities2 {
-    flex-basis: 32%;
     border-radius: 10px;
-    margin-bottom: 30px;
+    padding: 10px 30px;
     position: relative;
     display: flex;
- 
+    text-align: center;
+    justify-content: center;
+   
     overflow: hidden;
+    height: 100%;
+
+    @include respond (tab-port){
+        display: block;
+        text-align: center;
+      
+    }
 
     &--b {
-        margin-left: 20px;
-       text-align: center;
+      
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+      
+      padding: 1rem 3rem;
+    
+      @include respond (tab-port){
+        padding: 1rem 10rem;
+        text-align: center;
+       
+    }
+     
        
         &--img {
-            width: 100%;
+          
            height: 45vh;
            display: flex;
-          z-index: 0;
+            z-index: 0;
+
+            @include respond (tab-port){
+               height: 50vh;
+                height: 50vh;
+            }
+            
         }
    }
 }

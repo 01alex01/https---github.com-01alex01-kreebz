@@ -37,6 +37,10 @@
                 margin-left: 1px;
                 margin-right: 1px;
 
+                @include respond(tab-port){
+                    margin-left: 4rem !important;
+                }
+
 
                 &-list {
 

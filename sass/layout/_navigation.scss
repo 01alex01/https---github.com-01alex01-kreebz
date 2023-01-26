@@ -8,7 +8,9 @@
     padding: 1px 0px;
     margin-bottom: 1rem;
 
-
+@include respond (tab-port){
+  display: none;
+}
     &__img{
         padding: 1.8rem .3rem;
 

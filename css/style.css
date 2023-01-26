@@ -205,7 +205,8 @@ html {
   position: relative;
   background-position: center;
   background-size: cover;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  text-align: center; }
   .explore__heading {
     padding: 0px 0px;
     width: 100%; }
@@ -227,6 +228,12 @@ html {
         font-weight: 700;
         padding: 0px 0px;
         margin-top: 60px; }
+        @media only screen and (max-width: 56.25em) {
+          .explore__heading--1-b {
+            display: none; } }
+        @media only screen and (max-width: 37.5em) {
+          .explore__heading--1-b {
+            display: none; } }
       .explore__heading--1-img {
         margin-left: 4rem;
         cursor: pointer;
@@ -236,7 +243,12 @@ html {
     display: flex;
     justify-content: space-between;
     padding: 3rem 3rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    flex-wrap: wrap; }
+    @media only screen and (max-width: 56.25em) {
+      .explore__first {
+        display: flex;
+        flex-direction: column; } }
   .explore__first--1 {
     box-shadow: 3px 3px 10px 3px black;
     background-color: #fff;
@@ -245,6 +257,9 @@ html {
     margin-top: 3rem;
     overflow: hidden;
     border-radius: .6rem; }
+    @media only screen and (max-width: 56.25em) {
+      .explore__first--1 {
+        background-color: red; } }
     .explore__first--1 hr {
       border: 2px solid #0000000A; }
   .explore__first--img {
@@ -704,6 +719,9 @@ html {
     margin-top: -1rem;
     margin-left: 40rem;
     z-index: 1; }
+    @media only screen and (max-width: 56.25em) {
+      .header__transcend {
+        display: none; } }
   .header__transcend p {
     height: 92vh;
     width: 20px;
@@ -861,6 +879,9 @@ html {
   height: 40px;
   padding: 1px 0px;
   margin-bottom: 1rem; }
+  @media only screen and (max-width: 56.25em) {
+    .nav {
+      display: none; } }
   .nav__img {
     padding: 1.8rem .3rem; }
     .nav__img--logo1 {

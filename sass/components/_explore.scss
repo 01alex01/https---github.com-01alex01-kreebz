@@ -5,6 +5,7 @@
     background-position: center;
     background-size: cover;
     margin-bottom: 3rem;
+    text-align: center;
 
 
 
@@ -40,6 +41,12 @@
                 padding: 0px 0px;
                 margin-top: 60px;
 
+                @include respond (tab-port){
+                    display: none;
+                }
+                @include respond (phone){
+                    display: none;
+                }
 
             }
 
@@ -58,19 +65,40 @@
         justify-content: space-between;
         padding: 3rem 3rem;
         margin-bottom: 1rem;
+        flex-wrap: wrap;
+
+        @include respond (tab-port) {
+            display: flex;
+            flex-direction: column;
+          
+        }
+
+
     }
 
     &__first--1 {
         box-shadow: 3px 3px 10px 3px black;
-         background-color: $color-primary-text;
+        background-color: $color-primary-text;
         padding: 5px 5px;
         margin-left: 1.5rem;
         margin-top: 3rem;
         overflow: hidden;
         border-radius: .6rem;
 
-        & hr{
-        border: 2px solid #0000000A;
+
+
+        @include respond (tab-port) {
+            background-color: red;
+
+
+        }
+
+
+    
+        
+
+        & hr {
+            border: 2px solid #0000000A;
         }
     }
 
@@ -79,7 +107,7 @@
     }
 
     &__first--content {
-
+      
         &-text-1 {
             text-align: left;
             line-height: 2.5rem;
@@ -96,6 +124,7 @@
                 font-size: 1.1rem;
                 display: block;
                 color: $color-primary-text-b;
+
             }
 
             &-c {
@@ -114,7 +143,8 @@
 
             & img {
                 display: block;
-                margin-left: 3rem;padding: 1rem;
+                margin-left: 3rem;
+                padding: 1rem;
             }
 
             & a {
@@ -122,33 +152,34 @@
                 text-decoration: none;
                 padding: 5px 10px;
                 background-color: $color-primary-light-sub;
-               border-radius: 1rem;
-            
-               color: $color-primary-light;
+                border-radius: 1rem;
+
+                color: $color-primary-light;
             }
         }
 
-        &-icon{
-               display: inline;
-               justify-content: center;
+        &-icon {
+            display: inline;
+            justify-content: center;
 
             &-a {
                 display: inline-block;
-   
-               & h5 {
-                font-size: 1.1rem;
-                margin-left: 10px;
 
-                & img{
-                    padding: 0 2px;
+                & h5 {
+                    font-size: 1.1rem;
+                    margin-left: 10px;
+
+                    & img {
+                        padding: 0 2px;
+                    }
                 }
-               }
-               &-img{
-                position: relative;
-                margin-bottom: -4px;
-               }
-           }
+
+                &-img {
+                    position: relative;
+                    margin-bottom: -4px;
+                }
+            }
         }
-      
+
     }
 }

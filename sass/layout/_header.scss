@@ -17,6 +17,10 @@
       margin-top: -1rem;
       margin-left: 40rem;
       z-index: 1;
+
+      @include respond(tab-port){
+         display: none;
+      }
     }
     &__transcend p{
          height: 92vh;
